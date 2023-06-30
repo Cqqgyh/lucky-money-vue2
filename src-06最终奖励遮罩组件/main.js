@@ -1,0 +1,15 @@
+import Vue from 'vue'
+import App from './App.vue'
+import router from './router'
+// 引入样式
+import '@/style/index.scss'
+// 导入vant UI组件库
+import Vant from 'vant';
+import 'vant/lib/index.css';
+Vue.use(Vant);
+Vue.config.productionTip = false
+
+new Vue({
+  router,
+  render: h => h(App)
+}).$mount('#app')
