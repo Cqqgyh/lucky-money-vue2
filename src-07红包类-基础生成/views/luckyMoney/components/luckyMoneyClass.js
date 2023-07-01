@@ -34,7 +34,7 @@ export default class LuckyMoney {
     this.img = document.createElement('img')
     //     设置img标签的src属性
     this.img.src = this.url
-    // 设置图片定位
+    // 设置图片定位:让每个图片互不影响位置，且方便设置初始位置
     this.img.style.position = 'absolute'
     // 设置img标签的宽高
     this.img.style.width = this.width
