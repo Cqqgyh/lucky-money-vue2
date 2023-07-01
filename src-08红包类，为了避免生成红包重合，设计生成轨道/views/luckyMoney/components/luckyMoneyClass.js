@@ -48,7 +48,6 @@ export default class LuckyMoney {
     this.img.onclick = this.click.bind(this)
     // 将img标签添加到parent中
     this.parent.appendChild(this.img)
-    // 根据动画持续时长销毁红包
   }
 
   // 销毁红包
