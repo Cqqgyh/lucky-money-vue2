@@ -4,7 +4,7 @@ import http from '@/api/http'
  * @description 创建红包
  * @param {number} totalMoney    红包金额
  * @param {number} totalNumber    红包个数
- * @returns {string} 红包key
+ * @returns {Promise<{data: string}>} 红包key
  */
 export function creatRedPacket(totalMoney,totalNumber) {
     return http.get(
@@ -25,7 +25,7 @@ export function getRedPacket(redPackageKey) {
 /**
  * @description 获得奖励接口
  * @param {string} redPackageKey  红包key
- * @returns {number} 获得奖励金额
+ * @returns {Promise<{data: number}>} 获得奖励金额
  */
 export function getRedPacketRecord(redPackageKey) {
     return http.get(
