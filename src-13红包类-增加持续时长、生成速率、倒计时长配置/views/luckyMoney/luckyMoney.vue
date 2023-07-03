@@ -81,7 +81,7 @@ export default {
       // 倒计时结束后，显示红包容器
       this.showLuckyMoneyMask()
       //   开启创建红包
-      this.createLuckyMoneyByInterval(5000,200)
+      this.createLuckyMoneyByInterval()
     },
     //#endregion
 
