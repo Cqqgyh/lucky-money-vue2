@@ -16,7 +16,7 @@
 import { getRedPacketRecord } from '@/api/luckyMoney'
 
 export default {
-  name: 'countdownMaskPage',
+  name: 'rewardMaskPage',
   props: {
     // 红包key 用于获取本次活动最终奖励金额
     luckyMoneyKey: {
